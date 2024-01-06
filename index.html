@@ -1,0 +1,82 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/style.css">
+    <title>Web Mini Computer</title>
+</head>
+<body>
+    <!-- Taskbar at the bottom -->
+    <div class="taskbar">
+        <div class="start-button" id="startButton">Start</div>
+        <div class="taskbar-icons">
+            <a href="#" class="taskbar-icon" id="youtubeIcon" target="_blank">
+                <img src="/icon/youtube.png" alt="YouTube">
+            </a>
+            <a href="https://www.google.com" class="taskbar-icon" target="_blank">
+                <img src="/icon/google.png" alt="Google">
+            </a>
+            <a href="#" class="taskbar-icon" id="vscodeIcon" target="_blank">
+                <img src="/icon/vscode.png" alt="VS Code">
+            </a>
+            <a href="#" class="taskbar-icon" id="whatsappIcon" target="_blank">
+                <img src="/icon/whatsapp.png" alt="WhatsApp">
+            </a>
+            <a href="#" class="taskbar-icon" id="mainIcon" target="_blank">
+                <img src="/icon/main.png" alt="Main">
+            </a>
+            <a href="#" class="taskbar-icon" id="notepadIcon" target="_blank">
+                <img src="/icon/notepad.png" alt="Notepad">
+            </a>
+            <a href="#" class="taskbar-icon" id="fileExplorerIcon" target="_blank">
+                <img src="/icon/file-explorer.png" alt="File Explorer">
+            </a>
+        </div>
+    </div>
+    <div class="start-menu" id="startMenu">
+        <div class="start-menu-header">
+            <img src="/icon/start_logo.jpg" alt="Start Logo">
+            <span>Start</span>
+        </div>
+        <div class="start-menu-options">
+            <div class="start-menu-option" id="calculatorOption">Calculator</div>
+            <div class="start-menu-option" id="notepadOption">Notepad</div>
+            <div class="start-menu-option" id="whatsappOption">WhatsApp</div>
+            <div class="start-menu-option" id="wordOption">Word</div>
+            <div class="start-menu-option" id="powerpointOption">PowerPoint</div>
+            <!-- Add more options with placeholders for logos -->
+        </div>
+    </div>
+    
+    
+
+    <div class="desktop-icons">
+        <a href="#" class="desktop-icon" id="desktopIcon1" target="_blank">
+            <img src="/icon/color.png" alt="Icon 1">
+        </a>
+        <a href="#" class="desktop-icon" id="desktopIcon2" target="_blank">
+            <img src="/icon/audio.png" alt="Icon 2">
+        </a>
+        <!-- Add more icons here with placeholders -->
+    </div>
+
+    <!-- Add a box with action buttons -->
+    <div class="action-box">
+        <button id="openPdfButton">Open PDF</button>
+        <button id="openCalculatorButton">Open Calculator</button>
+        <button id="saveFileButton">Save File</button>
+        <input type="color" id="pickColorButton" value="#ffffff" title="Pick a Color">
+        <button id="openOnlineGdbButton">Open Online GDB</button>
+    </div>
+
+    <!-- Add sticky notes container -->
+    <div class="sticky-notes-container">
+        <h3>Sticky Notes</h3>
+        <textarea id="stickyNote"></textarea>
+    </div>
+
+    <script src="/script.js"></script>
+</body>
+</html>

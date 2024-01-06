@@ -1,0 +1,184 @@
+/* public/style.css */
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+/* ... (previous CSS remains unchanged) ... */
+
+.start-menu {
+    position: absolute;
+    top: 40px; /* Adjust this value to place the menu below the taskbar */
+    left: 0;
+    width: 200px; /* Set your desired width */
+    background-color: #fff;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.start-menu-header {
+    display: flex;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #ccc;
+}
+
+.start-menu-header img {
+    width: 20px; /* Adjust the size of the Start logo */
+    height: 20px; /* Adjust the size of the Start logo */
+    margin-right: 8px;
+}
+
+.start-menu-options {
+    padding: 8px;
+}
+
+.start-menu-option {
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.start-menu-option:hover {
+    background-color: #f0f0f0;
+}
+
+/* ... (rest of your CSS remains unchanged) ... */
+
+
+/* File Explorer styles */
+.file-explorer {
+    width: 300px;
+    height: 400px;
+    border: 1px solid #ccc;
+    overflow: auto;
+}
+
+.file-item {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.file-item:hover {
+    background-color: #d9edf7;
+}
+
+.text-file {
+    color: #000;
+}
+
+.image-file {
+    color: #0000ff;
+}
+
+.document-file {
+    color: #d9534f;
+}
+
+/* Sticky Notes styles */
+.sticky-notes-container {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    background-color: #fff;
+    padding: 10px;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Taskbar styles */
+.taskbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 40px;
+    background-color: #1a1a1a;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px;
+}
+
+.taskbar-icons {
+    display: flex;
+}
+
+.taskbar-icon {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+}
+
+.taskbar-icon img {
+    width: 24px;
+    height: 24px;
+    margin-right: 148px;
+}
+
+/* Add a separator between taskbar icons */
+.taskbar-icons .taskbar-icon:not(:last-child) {
+    border-right: 1px solid #ccc;
+}
+
+/* Desktop icons styles */
+.desktop-icons {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+}
+
+.desktop-icon {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #000;
+}
+
+.desktop-icon img {
+    width: 64px;
+    height: 64px;
+}
+
+/* Additional styles for new features */
+.action-box {
+    position: fixed;
+    top: 75%;
+    left: 10px;
+    transform: translateY(-50%);
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.action-box button {
+    margin-bottom: 10px;
+    cursor: pointer;
+}
+
+.action-box button:last-child {
+    margin-bottom: 0;
+}
+.start-button {
+    background-color: #4caf50; /* Green background color */
+    color: #fff; /* White text color */
+    padding: 8px 16px; /* Padding inside the button */
+    border: none; /* Remove button border */
+    border-radius: 4px; /* Add a slight border radius for a rounded look */
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.start-button:hover {
+    background-color: #45a049; /* Darker green color on hover */
+}
